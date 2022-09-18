@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Más formularios</title>
+</head>
+<body>
+    <h1>Formulario de retroalimentación</h1>
+    <p>Llene el formulario para ayudarnos a mejorar nuestro sitio.</p>
+    <form action="http://www.deitel.com" method="post">
+        <input type="hidden" name="destinatario" value="deitel@deitel.com">
+        <input type="hidden" name="asunto" value="Formulario de retroalimentación">
+        <input type="hidden" name="redirigir" value="P1.hmtl">
+        <label for="">Comentarios:</label>
+            <br>
+        <textarea name="comentarios" id="4" cols="36" rows="10">Escriba aquí los comentarios
+        </textarea>
+        <p>
+            <label for="">Dirección de correo electrónico:
+                <input name="email" type="password" size="25">
+            </label>
+        </p>
+        <strong>Cosas que le gustaron:</strong>
+        <label for="diseno">Diseño del sitio</label>
+        <input value="diseno" type="checkbox" name="cosasgustaron">
+        <label >Vínculos</label>
+        <input value="vinculos" type="checkbox" name="cosasgustaron">
+        <label >Facilidad de uso</label>
+        <input value="vinculos" type="checkbox" name="cosasgustaron">
+        <label >Imagenes</label>
+        <input value="Imagenes" type="checkbox" name="cosasgustaron">
+        <label >Código fuente</label>
+        <input value="codigo" type="checkbox" name="cosasgustaron">
+        <strong>Como llegó a nuestro sitio</strong>
+        <label for="">Motor de búsqueda</label>
+        <input id="" type="radio" name="comositio" value="motor busqueda" checked>
+        <label for="">Vínculos de otros sitio</label>
+        <input id="" type="radio" name="comositio" value="viculo">
+        <label for="">Sitio web deitel.com</label>
+        <input id="" type="radio" name="comositio" value="deitel.com">
+        <label for="">Referencia de un sitio</label>
+        <input id="" type="radio" name="comositio" value="libro">
+        
+        <label for="">Otro</label>
+        <input id="" type="radio" name="comositio" value="otro">
+
+        <p><label for="">Califique nuestro sitio</label></p>
+        <select name="calificacion">
+            <option value="" selected>Sorprendente</option>
+            <option value="">10</option>
+            <option value="">9</option>
+            <option value="">8</option>
+            <option value="">7</option>
+            <option value="">6</option>
+            <option value="">5</option>
+            <option value="">4</option>
+            <option value="">3</option>
+            <option value="">2</option>
+            <option value="">1</option>
+            <option value="">Malo</option>
+        </select>
+        <p></p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>
+
