@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/app.css">
+    <title>Ejercicio 14</title>
+</head>
+<body>
+    <h1>Ejercicio 14</h1>
+    <h2>Visita al campus local</h1>
+    <p>Llene este formulario para ayudarnos a mejorar la visita al campus</p>
+    <form method="post" action="">
+        <fieldset>
+            <legend>Datos especificos</legend>
+            <div>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" placeholder="Ingrese su nombre">
+            </div>
+            <div>
+                <label for="email">Correo electronico</label>
+                <input type="email" id="email" placeholder="Ingrese su correo electronico">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Selecciona que te gusto</legend>
+            <label for="campus">Campus</label>
+            <input type="checkbox" id="campus">
+            <label for="estudiantes">Estudiantes</label>
+            <input type="checkbox" id="estudiantes">
+            <label for="ubicacion">Ubicación</label>
+            <input type="checkbox"  id="ubicacion">
+            <label for="ambiente">Ambiente</label>
+            <input type="checkbox" id="ambiente">
+            <label for="dormitorio">Dormitorio</label>
+            <input type="checkbox"  id="dormitorio">
+            <label for="deportes">Deportes</label>
+            <input type="checkbox"  id="deportes">
+        </fieldset>
+        <fieldset>
+            <legend>¿Como conocieron la universidad?</legend>
+            <label for="amigos">Amigos</label>
+                <input name="conocieron" type="radio" value="amigos" id="amigos">
+            <label for="tv">Televisión</label>
+                <input name="conocieron" type="radio" value="television" id="tv">
+            <label for="internet">Internet</label>
+                <input name="conocieron" type="radio" value="internet" id="internet" >
+            <label for="otro">Otro</label>
+                <input name="conocieron" type="radio" value="otro" id="otro" >
+        </fieldset>
+        <fieldset>
+            <legend for="comentarios">Comentarios</legend>
+            <textarea name="" id="comentarios" cols="30" rows="10"></textarea>
+        </fieldset>
+        <div style="display: flex; justify-content: center; margin-top: 2rem; gap: 2rem;">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+    <a href="/" class="btn"><i class="fa-solid fa-house"></i>Regresar a menú</a>
+</body>
+<script src="https://kit.fontawesome.com/21a716db95.js" crossorigin="anonymous"></script>
+</html>
