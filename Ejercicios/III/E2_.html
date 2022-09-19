@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/PW_CII-III/css/app.css">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h1>Ejercicio 2</h1>
+    <form action="">
+        <div>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" placeholder="Ingrese su nombre" required>
+        </div>
+        <div>
+            <label for="lastname">Apellidos:</label>
+            <input type="text" id="lastaname" placeholder="Ingrese sus apellidos" required>
+        </div>
+        <div>
+            <label for="email">Correo electronico:</label>
+            <input type="email" name="email" id="email" placeholder="Ingrese su correo electronico" required>
+        </div>
+        <details>
+            <summary>Pregunta opcional</summary>
+            <label for = "lista">Año de universidad:</label>
+            <input type = "text" id = "lista" placeholder = "Seleccione un año" list = "semestres" />
+                <datalist id ="semestres">
+                    <option value="Primer semestre">Primer semestre</option>
+                    <option value="Segundo semestre">Segundo semestre</option>
+                    <option value="Tercer semestre">Tercer semestre</option>
+                </datalist>
+            
+        </details>
+    </form>
+    <a href="/PW_CII-III" class="btn"><i class="fa-solid fa-house"></i>Regresar a menú</a>
+</body>
+<script src="https://kit.fontawesome.com/21a716db95.js" crossorigin="anonymous"></script>
+</html>

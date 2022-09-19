@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/PW_CII-III/css/app.css">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h1>Ejercicios</h1>
+    <h2>Complete las siguientes oraciones</h2>
+    <ol>
+        <li>El atributo <mark>for</mark>  (que se utiliza en un solo elemento input en un formulario) resalta de manera automática el elemento input y, si se usa de manera apropiada, coloca el cursor en el campo de texto después de que el navegador carga y despliega la página.</li>
+        
+        <li>Los nuevos tipos input de HTML5 tienen  <mark>validación automatica</mark>  del lado del cliente.</li>
+        
+        <li>El tipo input  <mark>number</mark>  permite al usuario introducir un valor numérico.</li>
+        
+        <li>El tipo input  <mark>Range</mark> se valida automáticamente de manera intrínseca cuando lo despliega el navegador como un control deslizante, ya que el usuario no puede mover el control fuera de los límites del valor mínimo o máximo.</li>
+        
+        <li>El atributo  <mark>autocomplete</mark>  puede usarse en los tipos input para completar de manera automática la información del usuario con base en datos de entrada anteriores.</li>
+        
+        <li>El elemento  <mark>figcaption</mark>  proporciona una leyenda para la imagen en el elemento figur</li>
+        
+        <li>El elemento summary muentra una flecha que apunta a la derecha enseguida de un resumen o leyenda cuando el docuemento se despliega en un navegador. Al hacer clic en la flecha, ésta apunta hacia abajo y revela el contenido del elemento  <mark>details</mark> .</li>
+        
+        <li>El elemento mark nos permite <mark>resaltar texto</mark> </li>
+    
+    </ol>
+    <h2>Indique si cada uno de los siguientes enunciados es verdadero o falso . Si es falso, explique el por qué</h2>
+    <ol>    
+        <li>Los navegadores que despliegan el tipo input color como campo de texto requieren que el usuario introduzca el nombre de un color. <mark>Falso, requieren el valor hexadecimal o que seleccionen el color</mark></li>
+        
+        <li>Cuando el usuario introduce datos en un formulario y luego lo envía (por lo general, al hacer clic en el botón Enviar), el navegador verifica de inmediato que los datos sean correctos<mark></mark> </li>
+        
+        <li>HTML5 puede validar si la dirección de correo electrónico introducida por el usuario existe en realidad. <mark>Falso, solo valida si cuenta con el signo de @</mark> </li>
+        
+        <li>Pede agregar required a cualquiera de los tipos input. <mark>Falso, solamente a aquellos donde el usuario deba ingresar datos</mark> </li>
+        
+        <li>Puede habilitar autocomplete sólo para ciertos elementos input. <mark>Verdadero</mark> </li>
+        
+        <li>El elemento time nos permite identificar una fecha, hora o ambas. <mark>Verdadero, permite mostrar tanto fecha y hora</mark></li>
+        
+        <li>El elemento caption proporciona una leyenda para la imagen en un elemento figure. <mark>Falso, para ello es necesario el elemento figcaption</mark>    </li>
+        
+        <li>El elemento datails muentra una flecha que apunta a la derecha enseguida de un resumen o leyenda cuando el documento se despliega en un navegador. Al hacer clic en la flecha, ésta apunta hacia abajo y revela el contenido del elemento summary.    <mark>Falso, es al reves el elemento sumary muestra una fecha que apunta a la derecha</mark>    </li>
+        
+        <li>El elemento footer describe el contenido que por lo general aparece en la parte inferior del contenido o del elemento section. <mark>Falso, describe un pie</mark>    </li>
+        
+        <li>El elemento highlight nos permite resaltar texto.<mark>Falso, para ello es necesario el elemento mark</mark>    </li>
+    
+    </ol>
+    <h2>Escriba un elemento (o elementos) de HTML5 para realizar cada una de las siguientes tareas:</h2>
+    <ol>
+        <li>Se pidió a los estudiantes que clasificaran los alimentos en la cafetería, en una escala del 1 al 10. Use un elemento meter con texto a su izquierda y a su derecha para indicar que la calificación promedio fue 7 de 10.</li>
+        <p>0<meter min="0" max="10" value="7"></meter>10</p>
+        <p> El promedio fue de 7</p>
+
+        
+        <li>Cree un elemento datails que muentre el texto "Resultados de la encuesta" en el elemento summary para la parte (a). Cuando el usuario haga clic en la flecha enseguida del texto de summary, deberá aparecer un párrafo que explique sobre la encuesta.</li>
+        <details>
+            <summary>Resultados de la encuesta</summary>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, odio.</p>
+        </details>
+        
+        <li>Cree un elemento input text para el primer nombre. El elemento deberá recibir el enfoque de manera automática al momento de desplegar el formulario en un navegador.</li>
+        <form action="">
+            <label for="name">Nombre:</label>
+            <input type="text" placeholder="Ingrese su nombre" id="name" autofocus>
+        </form>
+        
+        <li>Modifique la parte (c) de modo que se elimine el elemento label y use texto en un elemento placeholder en el elemento holder.</li>
+        
+        <li>Use un elemento datalist para proveer una lista autocomplete para cinco estados.</li>
+        <form action="">
+            <label for="listaEstados">Estados</label>
+            <input type="text" id="listaEstados" placeholder="Seleccione estado" list="estados">
+            <datalist id="estados">
+                <option value="Aguascalientes">Aguascalientes</option>
+                <option value="Baja california">Baja california</option>
+                <option value="Chiapas">Chiapas</option>
+                <option value="Jalisto">Jalisco</option>
+                <option value="Veracruz">Veracruz</option>
+            </datalist>
+        </form>
+        
+        <li>Cree un elemento input range que permita al usuario seleccionar un número del 1 al 100.</li>
+        <form action="">
+            <label for="">Rango: 0</label>
+            <input type="range" name="rango" id="rango" min="1" max="100" value="0"> 100
+        </form>
+        
+        <li>Especifique que no debe permitirse el atributo autocomplete en un formulario. Muestre sólo la etiqueta de apertura del formulario.</li>
+        <p>autocomplete="off"</p>
+        <li>Use un elemento mark para resaltar el segundo enunciado del siguiente párrafo:
+            <br>
+            <mark>Se pidió a los estudiantes que calificaran los alimentos en la cafetería en una escala del 1 al 10. El resultado promedio fue de 7.</mark>
+        
+        </li>
+    </ol>
+    <a href="/PW_CII-III" class="btn"><i class="fa-solid fa-house"></i>Regresar a menú</a>
+</body>
+<script src="https://kit.fontawesome.com/21a716db95.js" crossorigin="anonymous"></script>
+</html>

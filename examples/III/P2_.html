@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/PW_CII-III/css/app.css">
+    <title>El nuevo atributo autocomplete y el elemento datalist de HTML5</title>
+</head>
+<body>
+    <h1>Practica 2</h1>
+    <h2>Demo de autocomplete y datalist</h2>
+    <p>Este formulario demuestra el nuevo atributo autocomplete de HTML y el elemento datalist.</p>
+    <form method = "post" autocomplete = "on">
+        <div>
+            <label>Primer nombre:
+                <input type = "text" id= "primerNombre" placeholder = "Primer nombre"/> (Primer nombre)
+            </label>
+        </div>
+        <div>
+            <label>Apellido:
+                <input type = "text" id= "apellido" placeholder = "Apellido" /> (Apellido)
+            </label>
+        </div>
+        <div>
+            <label>Email:
+                <input type = "email" id = "email" placeholder = "nombre@dominio.com" /> (nombre@dominio.com)
+            </label>
+        </div>
+        <div>
+            <label for = "listaTexto">Mes de nacimiento:
+                <input type = "text" id = "listaTexto"
+                placeholder = "Seleccione un mes" list = "meses" />
+                <datalist id ="meses">
+                    <option value = "Enero">
+                    <option value = "Febrero">
+                    <option value ="Marzo">
+                    <option value = "Abril">
+                    <option value = "Mayo">
+                    <option value = "Junio">
+                    <option value = "Julio">
+                    <option value = "Agosto">
+                    <option value = "Septiembre">
+                    <option value = "Octubre">
+                    <option value = "Noviembre">
+                    <option value = "Diciembre">
+                </datalist>
+            </label>
+        </div>
+        <input type = "submit" value = "Enviar" />
+        <input type = "reset" value = "Borrar" />
+    </form>
+    <a href="/PW_CII-III" class="btn"><i class="fa-solid fa-house"></i>Regresar a menú</a>
+</body>
+<script src="https://kit.fontawesome.com/21a716db95.js" crossorigin="anonymous"></script>
+</html>
